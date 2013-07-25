@@ -87,6 +87,14 @@
         return passedTimeDisplayValue;
     };
 
+    //Create an array from comma separated string
+    Ginny.stringToArray = function(str){
+        var result = str.split(',');
+        for (i in result){
+            result[i] = result[i].trim();
+        }
+        return result;
+    };
 
     global.Ginny = Ginny;
 

@@ -15,4 +15,7 @@ $( document ).ready(function() {
     $("#time-passed-example").html(Ginny.timePassed(100));
     $("#time-passed-example1").html(Ginny.timePassed(10000));
     $("#time-passed-example2").html(Ginny.timePassed(10000000));
+
+    //String to array
+    $("#string-to-array-example").html(JSON.stringify(Ginny.stringToArray("someEmail@devnull.com, anotherEmail@devnull.com, oneMoreEmail@devnull.com")));
 });
