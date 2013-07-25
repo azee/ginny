@@ -18,4 +18,7 @@ $( document ).ready(function() {
 
     //String to array
     $("#string-to-array-example").html(JSON.stringify(Ginny.stringToArray("someEmail@devnull.com, anotherEmail@devnull.com, oneMoreEmail@devnull.com")));
+
+    //Array to string
+    $("#array-to-string-example").html(Ginny.arrayToString(["myLogin","herLogin","hisLogin"]));
 });

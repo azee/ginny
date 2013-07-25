@@ -96,6 +96,19 @@
         return result;
     };
 
+    //Return a comma separated string from an array
+    Ginny.arrayToString = function(arr){
+        var result = "";
+        for (i in arr){
+            var currentValue = $.trim(arr[i]);
+            if (currentValue != ""){
+                result = result + ", " + currentValue;
+            }
+        };
+        result = result.replace(/^,/, '').trim();
+        return result;
+    };
+
     global.Ginny = Ginny;
 
 })(window);
