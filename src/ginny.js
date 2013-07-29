@@ -1,7 +1,14 @@
 //Created by azee
 
 (function(global) {
-    var Ginny = function() {};
+    var Ginny = function() {
+        //IE Fix
+        if(typeof String.prototype.trim !== 'function') {
+            String.prototype.trim = function() {
+                return this.replace(/^\s+|\s+$/g, '');
+            }
+        }
+    };
 
     //Get a parameter value from the location
     Ginny.getParameterByName = function (name) {
