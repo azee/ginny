@@ -1,8 +1,11 @@
 //Created by azee
 
 (function(global) {
-    var Ginny = function() {
-        //IE Fix
+    var Ginny = function() {};
+
+    //Init function
+    Ginny.init = function() {
+        //Support TRIM in IE
         if(typeof String.prototype.trim !== 'function') {
             String.prototype.trim = function() {
                 return this.replace(/^\s+|\s+$/g, '');
@@ -116,6 +119,7 @@
         return result;
     };
 
+    Ginny.init();
     global.Ginny = Ginny;
 
 })(window);
