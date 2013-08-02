@@ -55,6 +55,7 @@ Ginny.arrayToString(["myLogin","herLogin","hisLogin"])
 Return string limited with provided number of chars with "..." at the end if needed. The output length is always <= limit:
 ```
 Ginny.getLimitedString("Here is a long string need to be cut by 30", 30)
+```
 
 The project has just started - please feel free to add new functions.
 
