@@ -1,4 +1,4 @@
-Ginny
+Ginny - make a wish!
 =====
 
 A simple Swiss Army Knife for JS UI developers
