@@ -131,6 +131,21 @@
         }
     };
 
+    //Appends only a unique string into array - like Set in Java
+    Ginny.addUniqueStringToArray = function (string, arr){
+        var found = false;
+        for (i in arr){
+            if (string == arr[i]){
+                found = true;
+                break;
+            }
+        }
+        if (!found){
+            arr.push(string);
+        }
+        return arr;
+    };
+
     Ginny.init();
     global.Ginny = Ginny;
 

@@ -57,6 +57,12 @@ Return string limited with provided number of chars with "..." at the end if nee
 Ginny.getLimitedString("Here is a long string need to be cut by 30", 30)
 ```
 
+Appends only a unique string into array - like Set in Java:
+```
+Ginny.addUniqueStringToArray("String1", ["String1", "String2", "String3"])
+Ginny.addUniqueStringToArray("String4", ["String1", "String2", "String3"])
+```
+
 The project has just started - please feel free to add new functions.
 
 

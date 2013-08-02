@@ -24,4 +24,9 @@ $( document ).ready(function() {
 
     //Array to string
     $("#limited-string-example").html(Ginny.getLimitedString("Here is a long string need to be cut by 30", 30));
+
+    //Add unique string
+    $("#unique-string-to-array-example").html(Ginny.addUniqueStringToArray("String3", ["String1", "String2", "String3"]));
+    $("#unique-string-to-array-example1").html(Ginny.addUniqueStringToArray("String4", ["String1", "String2", "String3"]));
+
 });
