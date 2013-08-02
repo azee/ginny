@@ -3,7 +3,7 @@ Ginny - make a wish!
 
 A simple Swiss Army Knife for JS UI developers
 
-Contains of useful frequently used functions for UI developers.
+Contains useful frequently used functions for UI developers.
 
 You'll find docs and examples is example.html and example.js files.
 
