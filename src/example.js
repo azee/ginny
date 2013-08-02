@@ -21,4 +21,7 @@ $( document ).ready(function() {
 
     //Array to string
     $("#array-to-string-example").html(Ginny.arrayToString(["myLogin","herLogin","hisLogin"]));
+
+    //Array to string
+    $("#limited-string-example").html(Ginny.getLimitedString("Here is a long string need to be cut by 30", 30));
 });

@@ -119,6 +119,18 @@
         return result;
     };
 
+    //Return string limited with provided number of chars with "..." at the end if needed. The output length is always <= limit
+    Ginny.getLimitedString = function(originString, limit){
+        if (originString == null){
+            return "";
+        }
+        if (originString.length > limit){
+            return originString.slice(0,limit - 3) + "...";
+        } else {
+            return originString;
+        }
+    };
+
     Ginny.init();
     global.Ginny = Ginny;
 

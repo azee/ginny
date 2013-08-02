@@ -42,7 +42,19 @@ Converts milliseconds to passed time string:
 Ginny.timePassed(MILLISECONDS)
 ```
 
+Converts a comma separated string to a trimmed array:
+```
+Ginny.stringToArray("someEmail@devnull.com, anotherEmail@devnull.com, oneMoreEmail@devnull.com")
+```
 
+Converts an array of strings to a comma separated string, suitable to push into input or an object on page:
+```
+Ginny.arrayToString(["myLogin","herLogin","hisLogin"])
+```
+
+Return string limited with provided number of chars with "..." at the end if needed. The output length is always <= limit:
+```
+Ginny.getLimitedString("Here is a long string need to be cut by 30", 30)
 
 The project has just started - please feel free to add new functions.
 
